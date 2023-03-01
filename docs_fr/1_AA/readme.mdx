@@ -22,11 +22,11 @@ Que se passerait-il s'il vous arrivait de perdre l'accès aux clés privées de 
 
 Rien de bon, n'est-ce pas ?
 
-Et cela parce que votre clé privée est votre compte. Perdre votre clé signifie perdre votre compte, votre argent, vos données: Tout !
+Pourquoi ? Parce que votre clé privée **est** votre compte, aussi perdre votre clé signifie perdre votre compte, votre argent, vos données: Tous vos biens crypto !
 
-Avec l'Account Abstraction (AA), si un utilisateur perd ses accès par erreur, il est possible l'aider à récupérer ses informations, car chaque compte est un smart-contrat (ou contrat intelligent) qui contient une logique et mettre en œuvre un flux.
+Avec l'Account Abstraction (AA), si un utilisateur perd ses accès par erreur, il devient possible de l'aider à récupérer ses informations. Comment ? chaque compte est un en fait un smart-contrat (ou contrat intelligent) qui contient une logique et met en œuvre un flux.
 
-Aussi, utiliser une logique de smart-contrat pour spécifier non seulement les effets de la transaction, mais également la logique de paiement et de validation des frais, offre de nombreux avantages de sécurité importants, tels que les portefeuilles de récupération multisignatures et intelligents, la possibilité de changer de clé sans changer de portefeuille et la sécurité quantique.
+Utiliser une logique de smart-contrat pour spécifier non seulement les effets de la transaction, mais également la logique de paiement et de validation des frais, offre de nombreux avantages de sécurité importants, tels que les portefeuilles de récupération multisignatures et intelligents, la possibilité de changer de clé sans changer de portefeuille et la sécurité quantique.
 et bien plus encore.
 
 ## 1. Comment les comptes fonctionnent-ils aujourd'hui
@@ -35,9 +35,9 @@ et bien plus encore.
 **Ethereum utilise deux types de "comptes" différents :**
 
 * Les Comptes de contrats
-* Les Externally Owned Account (EOA) ou comptes détenus en externe (EOA)
+* Les Externally Owned Account (EOA) ou comptes détenus en externe
 
-*Les EOA sont des comptes d'utilisateurs traditionnels.*
+*Les EOA sont des adresses de comptes utilisateurs traditionnels.*
 
 S'Il existe [des différences clés](https://ethereum.org/en/developers/docs/accounts/) entre les EOA et les contrats,
 
@@ -46,21 +46,21 @@ S'Il existe [des différences clés](https://ethereum.org/en/developers/docs/acc
 * Recevoir, conserver et envoyer des ETH et des tokens
 * Interagir avec des contrats intelligents déjà déployés
 
-## 2. Les Comptes de l'AA (Account Abstraction)
+## 2. Les Comptes et l'AA (Account Abstraction)
 
-L'Account Abstraction unifie les notions de comptes contractuels et les EOA.
+L'Account Abstraction unifie les notions de comptes de contrats et les EOA.
 
 Cela rend les comptes d'utilisateurs plus "programmables". Vous supprimez la logique de signature des transactions du compte, vous la rendez "abstraite", d'où l'abstraction du compte.
 
-Les nouvelles expériences qui s'offrent maintenant à vous, proviennent plus des fonctionnalités rendues possibles par l'abstraction de comptes que de l'abstraction elle-même.
+Les nouvelles expériences qui s'offrent ainsi à vous proviennent plus des fonctionnalités rendues possibles par l'abstraction de comptes que de l'abstraction elle-même.
 
-Il ne s'agit plus maintenant d'avoir ununique pour tous les cas d'usage, mais maintenant chaque utilisateur peut avoir un compte adapté à ses besoins.
+Il ne s'agit plus maintenant d'avoir un compte unique pour tous les cas d'usage, mais avoir un compte adapté à chacun de ses besoins.
 
 * Vous souhaitez utiliser un schéma de signature autre que ECDSA ? créez un compte pour le faire !
 * Vous souhaitez utiliser plusieurs clés pour autoriser les transactions ? Créez un compte pour le faire !
 * Vous souhaitez changer le signataire de votre compte chaque semaine ? Vous pouvez également créer un compte pour le faire !
 
-On peut Ainsi dire, que l'Account Abstraction vous offre une "validité de transaction programmable".
+On considère ainsi que l'Account Abstraction vous offre une "validité de transaction programmable".
 
 
 ## 3. Starknet et l'Account Abstraction
@@ -77,11 +77,11 @@ Starknet se concentre sur certains composants clés du protocole :
     
 ## 4. Quels portefeuilles prennent en charge les AA ?
 
-Si nous nous concentrions sur les portefeuilles qui implémentent l'AA, nous avons deux options principales que nous détaillons ci-dessous:
+Parmi l'esemble des portefeuilles disponibles, nous en trouvons deux principales qui supportent l'AA - nous les détaillons ci-dessous:
 
 ### 4.1 Argent
 
-Argent X est le portefeuille le plus populaire et le seul disponible actuellement en  open source sur Starknet, vous pouvez acheter et "bridger" des cryptomonnaies sur Starknet, échanger des tokens, créer et stocker des NFT, jouer à des jeux web3 et bien plus encore.
+Argent X est le portefeuille le plus populaire et le seul disponible actuellement en open source sur Starknet. Vous pouvez acheter et "bridger" des cryptomonnaies sur Starknet, échanger des tokens, créer et stocker des NFT, jouer à des jeux web3 et bien plus encore.
 
 #### Comment créer un wallet Argent X
 
@@ -117,12 +117,12 @@ Argent X est le portefeuille le plus populaire et le seul disponible actuellemen
 
 *Toute transaction effectuée sur la blockchain utilise du gas, il s'agit d'une petite quantité de crypto. Avant d'effectuer de commencer à explorer Starknet mainnet (le réseau principale), vous aurez besoin de fonds pour déployer votre wallet Argent X, comme chaque wallet est un smart contract sur Starknet (une classe  d'AA) et requiere une petite transaction on-chain pour s'activer.*
 
-Une fois cela effectué, vous aurez la possibiliter d'envoyer, échanger et ajouter des tokens.
+Une fois cela effectué, vous aurez la possibilité d'envoyer, échanger et ajouter des tokens.
 
 
 #### Les fonctionnalités d'Argent X
 
-Le wallet Argent X possède toutes les fonctionnalités d'un portefeuille crypto traditionnel, mais comme il est un smart contrat sur la Starknet, il possède des propriétés uniques:
+Le wallet Argent X possède toutes les fonctionnalités d'un portefeuille crypto traditionnel, mais comme il est un en fait un smart-contrat Starknet, il possède des propriétés uniques:
 
 * Surveillance de la fraude.
 * Revue des transactions
@@ -131,13 +131,13 @@ Le wallet Argent X possède toutes les fonctionnalités d'un portefeuille crypto
 * Clef de session.
 
 
-maintenant que vous savez, explorons ! 
+maintenant que vous savez de quoi nous parlons, explorons ! 
 
 ### 4.2 Braavos
 
-Braavos n'est pas seulement une application de navigateur mais une application mobile native, vous pouvez donc stocker vos tokens, transférer, échanger et gérer vos objets de collection NFT, mais plus encore, accéder et vous connecter à n'importe quel dApp sur Starknet depuis votre téléphone.
+Braavos n'est pas seulement une application pour navigateur, c'est aussi une application mobile native, vous pouvez donc stocker vos tokens, transférer, échanger et gérer vos collections NFT, mais plus encore: accéder et vous connecter à n'importe quel dApp sur Starknet depuis votre téléphone.
 
-Votre mobile est toujours avec vous, vous permettant d'accéder à vos cryptos quand et où vous le souhaitez avec la confidentialité de votre cryptage biométrique.
+Votre mobile est toujours avec vous, vous permettant d'accéder à vos cryptos quand et où vous le souhaitez avec la confidentialité apportée par la biométrique.
 
 #### Comment Creer un wallet Braavos
 
@@ -147,7 +147,7 @@ Votre mobile est toujours avec vous, vous permettant d'accéder à vos cryptos q
 ![](./img/7.png)
 
 
-2. Accroché l'extension Braavos à votre navigateur, pour un accès rapide, et appuyez sur "Get Started"
+2. Accrochez l'extension Braavos à votre navigateur, pour un accès rapide, et appuyez sur "Get Started"
 
 ![](./img/8.png)
 
@@ -165,7 +165,7 @@ Votre mobile est toujours avec vous, vous permettant d'accéder à vos cryptos q
 
 ![](./img/11.png)
 
-6. N'oubliez pas que vous devez déposer des jetons dans votre portefeuille si vous souhaitez utiliser le réseau principal, afin d'activer le compte de contrat intelligent.
+6. N'oubliez pas que vous devez déposer des jetons dans votre portefeuille si vous souhaitez utiliser le réseau principal, afin d'activer votre compte (qui est en fait un smart-contrat).
 
 ![](./img/12.png)
 
